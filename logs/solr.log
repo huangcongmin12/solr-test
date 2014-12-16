@@ -1,0 +1,1168 @@
+INFO  - 2014-12-08 11:16:40.074; com.hcm.solr.test.MyTest; ########## Query Time :3
+INFO  - 2014-12-08 11:16:40.078; com.hcm.solr.test.MyTest; ########## Elapsed Time :135
+INFO  - 2014-12-08 11:16:40.078; com.hcm.solr.test.MyTest; ########## Status :0
+DEBUG - 2014-12-08 11:24:18.024; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 11:24:18.365; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 11:24:18.377; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 11:24:18.379; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 11:24:18.404; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 11:24:18.416; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 11:24:18.416; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 11:24:18.417; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 11:24:18.417; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 11:24:18.417; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 11:24:18.418; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.419; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.420; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.420; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.420; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.420; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.421; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.422; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 11:24:18.422; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 11:24:18.422; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 11:24:18.422; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 11:24:18.423; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 11:24:18.423; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 11:24:18.423; org.apache.http.impl.conn.Wire;  >> "6e[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.424; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="id">1</field><field name="title">this is my document !!</field></doc></add>"
+DEBUG - 2014-12-08 11:24:18.424; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.424; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.424; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.430; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.432; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.432; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.433; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.433; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 03:24:18 GMT[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.433; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.434; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 11:24:18.434; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 11:24:18.434; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 11:24:18.435; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 11:24:18.435; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 11:24:18.435; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 03:24:18 GMT
+DEBUG - 2014-12-08 11:24:18.437; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 11:24:18.459; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB"
+DEBUG - 2014-12-08 11:24:18.460; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 11:24:18.461; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 11:24:18.463; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 11:24:18.463; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 11:24:18.463; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 11:24:18.465; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 11:24:18.465; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 11:24:18.465; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 11:24:18.466; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 11:24:18.466; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 11:24:18.466; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 11:24:18.466; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.466; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.467; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.467; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.467; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.467; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.467; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.468; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 11:24:18.468; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 11:24:18.468; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 11:24:18.468; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 11:24:18.468; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 11:24:18.469; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 11:24:18.469; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 11:24:18.731; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.732; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.732; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.733; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.733; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 03:24:18 GMT[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.733; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 11:24:18.734; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 11:24:18.734; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 11:24:18.734; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 11:24:18.735; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 11:24:18.735; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 11:24:18.735; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 03:24:18 GMT
+DEBUG - 2014-12-08 11:24:18.736; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 11:24:18.736; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeT[0x10]"
+DEBUG - 2014-12-08 11:24:18.736; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 11:24:18.737; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 11:24:18.737; com.hcm.solr.test.MyTest; ########## Query Time :2
+INFO  - 2014-12-08 11:24:18.737; com.hcm.solr.test.MyTest; ########## Elapsed Time :152
+INFO  - 2014-12-08 11:24:18.737; com.hcm.solr.test.MyTest; ########## Status :0
+DEBUG - 2014-12-08 12:32:21.344; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 12:32:21.665; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 12:32:21.677; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:32:21.680; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 12:32:21.705; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:32:21.737; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:32:21.737; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:32:21.738; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:32:21.738; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:32:21.739; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:32:21.740; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.741; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.741; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.741; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.741; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.742; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.743; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.743; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:32:21.743; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:32:21.744; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 12:32:21.744; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 12:32:21.744; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:32:21.744; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:32:21.745; org.apache.http.impl.conn.Wire;  >> "1ad[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.745; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="id">0</field><field name="title">aaaaaaa</field></doc><doc boost="1.0"><field name="id">1</field><field name="title">bbbbbbb</field></doc><doc boost="1.0"><field name="id">2</field><field name="title">ccccccc</field></doc><doc boost="1.0"><field name="id">3</field><field name="title">dddddd</field></doc><doc boost="1.0"><field name="id">4</field><field name="title">eeeeee</field></doc></add>"
+DEBUG - 2014-12-08 12:32:21.745; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.746; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.746; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.752; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.755; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.755; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.755; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.755; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:32:21 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.755; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.756; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:32:21.757; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:32:21.757; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:32:21.757; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:32:21.757; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 12:32:21.757; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:32:21 GMT
+DEBUG - 2014-12-08 12:32:21.760; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:32:21.792; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeD"
+DEBUG - 2014-12-08 12:32:21.793; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:32:21.794; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:32:21.796; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:32:21.796; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:32:21.796; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 12:32:21.798; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:32:21.798; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:32:21.798; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:32:21.798; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:32:21.799; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:32:21.799; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:32:21.799; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.799; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.800; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.800; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.800; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.800; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.800; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:32:21.801; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:32:21.802; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 12:32:22.063; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.064; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.065; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.065; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.066; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:32:21 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.066; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:32:22.067; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:32:22.067; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:32:22.067; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:32:22.067; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:32:22.068; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 12:32:22.068; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:32:21 GMT
+DEBUG - 2014-12-08 12:32:22.068; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:32:22.069; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeS[0x10]"
+DEBUG - 2014-12-08 12:32:22.069; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:32:22.070; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 12:32:22.070; com.hcm.solr.test.MyTest; ########## Query Time :4
+INFO  - 2014-12-08 12:32:22.070; com.hcm.solr.test.MyTest; ########## Elapsed Time :186
+INFO  - 2014-12-08 12:32:22.070; com.hcm.solr.test.MyTest; ########## Status :0
+DEBUG - 2014-12-08 12:41:22.740; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 12:41:23.184; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 12:41:23.197; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:41:23.199; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 12:41:23.225; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:41:23.236; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:41:23.236; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:41:23.237; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:41:23.237; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:41:23.238; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:41:23.238; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.240; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.240; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.240; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.240; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.241; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.242; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.242; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:41:23.242; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:41:23.243; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 12:41:23.243; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 12:41:23.243; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:41:23.243; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:41:23.244; org.apache.http.impl.conn.Wire;  >> "1b[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.244; org.apache.http.impl.conn.Wire;  >> "<delete><id>0</id></delete>"
+DEBUG - 2014-12-08 12:41:23.244; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.245; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.245; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.249; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.251; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.252; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.252; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.252; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:41:23 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.252; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.253; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:41:23.260; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:41:23.261; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:41:23.261; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:41:23.261; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 12:41:23.261; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:41:23 GMT
+DEBUG - 2014-12-08 12:41:23.263; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:41:23.285; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB"
+DEBUG - 2014-12-08 12:41:23.286; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:41:23.286; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:41:23.288; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:41:23.289; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:41:23.289; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 12:41:23.290; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:41:23.290; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:41:23.290; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:41:23.291; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:41:23.291; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:41:23.291; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:41:23.291; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.292; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.292; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.292; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.292; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.292; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.293; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.293; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:41:23.293; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 12:41:23.293; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:41:23.293; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 12:41:23.294; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:41:23.294; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:41:23.294; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 12:41:23.456; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.456; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.457; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.457; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.458; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:41:23 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.458; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:41:23.459; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:41:23.461; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:41:23.461; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:41:23.462; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:41:23.462; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 12:41:23.463; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:41:23 GMT
+DEBUG - 2014-12-08 12:41:23.463; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:41:23.464; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime_[0x9]"
+DEBUG - 2014-12-08 12:41:23.464; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:41:23.465; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:42:43.718; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 12:42:44.051; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 12:42:44.063; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:42:44.065; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 12:42:44.092; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:42:44.117; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:42:44.118; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:42:44.118; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:42:44.118; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:42:44.119; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:42:44.120; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.121; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.121; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.121; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.121; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.122; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.123; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.123; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 12:42:44.123; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:42:44.124; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 12:42:44.124; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 12:42:44.124; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:42:44.124; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:42:44.125; org.apache.http.impl.conn.Wire;  >> "6f[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.125; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="id">11</field><field name="title">this is my document !!</field></doc></add>"
+DEBUG - 2014-12-08 12:42:44.125; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.126; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.126; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.130; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.133; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.134; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.134; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.135; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:42:44 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.135; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.136; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:42:44.136; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:42:44.137; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:42:44.137; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:42:44.137; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 12:42:44.138; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:42:44 GMT
+DEBUG - 2014-12-08 12:42:44.141; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:42:44.163; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB"
+DEBUG - 2014-12-08 12:42:44.164; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:42:44.165; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:42:44.167; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:42:44.167; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 12:42:44.168; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 12:42:44.169; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 12:42:44.169; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 12:42:44.169; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:42:44.170; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 12:42:44.170; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 12:42:44.170; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:42:44.170; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.170; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.171; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.171; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.171; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.171; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.171; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.172; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 12:42:44.172; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 12:42:44.172; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 12:42:44.172; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 12:42:44.172; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 12:42:44.173; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 12:42:44.173; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 12:42:44.376; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.377; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.377; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.378; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.378; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 04:42:44 GMT[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.379; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 12:42:44.379; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:42:44.379; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 12:42:44.379; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 12:42:44.380; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 12:42:44.380; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 12:42:44.380; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 04:42:44 GMT
+DEBUG - 2014-12-08 12:42:44.380; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 12:42:44.381; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeX[0xc]"
+DEBUG - 2014-12-08 12:42:44.381; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 12:42:44.381; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 12:42:44.382; com.hcm.solr.test.MyTest; ########## Query Time :2
+INFO  - 2014-12-08 12:42:44.382; com.hcm.solr.test.MyTest; ########## Elapsed Time :171
+INFO  - 2014-12-08 12:42:44.382; com.hcm.solr.test.MyTest; ########## Status :0
+DEBUG - 2014-12-08 13:18:58.349; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:18:58.683; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:18:58.698; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:18:58.701; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:18:58.732; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:18:58.747; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:18:58.747; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:18:58.748; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:18:58.748; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:18:58.749; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:18:58.749; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.751; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.752; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.752; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.752; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.752; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:18:58.754; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:18:58.754; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:18:58.754; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:18:58.811; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.813; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.813; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.813; org.apache.http.impl.conn.Wire;  << "Content-Length: 100[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.814; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:18:58 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.814; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:18:58.815; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:18:58.816; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:18:58.816; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:18:58.817; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:18:58.817; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 100
+DEBUG - 2014-12-08 13:18:58.817; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:18:58 GMT
+DEBUG - 2014-12-08 13:18:58.820; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:18:58.851; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[0x6][0x0][0x0][0x0][0x0][0xe0]&params[0xa3][0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]``[0x0][0x80]"
+DEBUG - 2014-12-08 13:18:58.859; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:18:58.859; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:23:39.972; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:23:40.269; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:23:40.281; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:23:40.283; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:23:40.308; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:23:40.319; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:23:40.320; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:23:40.320; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:23:40.320; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:23:40.321; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:23:40.322; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.323; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.323; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.323; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.324; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.324; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:23:40.325; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:23:40.325; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:23:40.326; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:23:40.328; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.330; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.331; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.331; org.apache.http.impl.conn.Wire;  << "Content-Length: 100[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.331; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:23:40 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.331; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:23:40.332; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:23:40.333; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:23:40.333; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:23:40.333; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:23:40.333; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 100
+DEBUG - 2014-12-08 13:23:40.334; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:23:40 GMT
+DEBUG - 2014-12-08 13:23:40.336; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:23:40.358; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[0x6][0x0][0x0][0x0][0x0][0xe0]&params[0xa3][0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]``[0x0][0x80]"
+DEBUG - 2014-12-08 13:23:40.360; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:23:40.360; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 13:23:40.361; com.hcm.solr.test.MyTest; ########### 总共 ： 0条记录
+DEBUG - 2014-12-08 13:28:08.058; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:28:08.360; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:28:08.372; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:28:08.375; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:28:08.401; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:28:08.412; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:28:08.412; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:28:08.413; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:28:08.413; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:28:08.414; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:28:08.415; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.416; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.416; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.417; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.417; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.417; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:28:08.418; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:28:08.418; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:28:08.419; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:28:08.422; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.424; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.424; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.424; org.apache.http.impl.conn.Wire;  << "Content-Length: 271[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.425; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:28:08 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.425; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:28:08.426; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:28:08.430; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:28:08.430; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:28:08.431; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:28:08.431; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 271
+DEBUG - 2014-12-08 13:28:08.431; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:28:08 GMT
+DEBUG - 2014-12-08 13:28:08.434; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:28:08.456; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[0x6][0x0][0x0][0x0][0x0][0xe0]&params[0xa4][0xe0]!q#*:*[0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]i`[0x0][0x85][0xb][0xa3][0xe0]"id)change.me[0xe0]%title[0x81])change.me[0xe0])_version_[0x7][0x14][0xa2]Q[0x8a]_`[0x0][0x0][0xb][0xa3][0xea]%hello[0xeb][0x81]%world[0xec][0x7][0x14][0xa2]Q[0xa6][0x98][0xc0][0x0][0x0][0xb][0xa3][0xea]&[0xe4][0xbd][0xa0][0xe5][0xa5][0xbd][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xab]s[0xb0][0x0][0x0][0xb][0xa3][0xea]&[0xe5][0x91][0xb5][0xe5][0x91][0xb5][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xae][0xb5][0xb0][0x0][0x0][0xb][0xa3][0xea]!1[0xeb][0x81]'bbbbbbb[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]P[0x0][0x0]"
+DEBUG - 2014-12-08 13:28:08.459; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:28:08.460; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 13:28:08.460; com.hcm.solr.test.MyTest; ########### 总共 ： 9条记录
+INFO  - 2014-12-08 13:28:08.460; com.hcm.solr.test.MyTest; ######### id : change.me  title : [change.me]
+INFO  - 2014-12-08 13:28:08.460; com.hcm.solr.test.MyTest; ######### id : hello  title : [world]
+INFO  - 2014-12-08 13:28:08.461; com.hcm.solr.test.MyTest; ######### id : 你好  title : [世界]
+INFO  - 2014-12-08 13:28:08.461; com.hcm.solr.test.MyTest; ######### id : 呵呵  title : [世界]
+INFO  - 2014-12-08 13:28:08.461; com.hcm.solr.test.MyTest; ######### id : 1  title : [bbbbbbb]
+DEBUG - 2014-12-08 13:58:44.948; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:58:45.256; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:58:45.269; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:58:45.272; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:58:45.301; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:58:45.315; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:58:45.316; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:45.316; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:45.316; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:58:45.317; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:58:45.319; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.321; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.321; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.321; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.321; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.322; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.323; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.323; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:58:45.324; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:58:45.324; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 13:58:45.324; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 13:58:45.324; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:58:45.325; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:58:45.325; org.apache.http.impl.conn.Wire;  >> "6f[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.326; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="id">11</field><field name="title">this is my document !!</field></doc></add>"
+DEBUG - 2014-12-08 13:58:45.326; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.326; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.327; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.332; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.335; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.335; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.335; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.335; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:58:45 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.336; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.337; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:45.337; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:45.337; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:58:45.345; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:58:45.346; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 13:58:45.346; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:58:45 GMT
+DEBUG - 2014-12-08 13:58:45.349; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:45.369; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeC"
+DEBUG - 2014-12-08 13:58:45.370; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:45.371; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:58:45.373; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:58:45.374; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:58:45.374; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 13:58:45.375; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:58:45.375; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:58:45.376; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:45.376; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:45.376; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:58:45.376; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 13:58:45.377; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.377; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.377; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.378; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.378; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.378; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.379; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.379; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 13:58:45.379; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 13:58:45.379; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:58:45.380; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 13:58:45.380; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:58:45.380; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:58:45.381; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 13:58:45.616; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.616; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.617; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.617; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.617; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:58:45 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.618; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:58:45.618; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:45.618; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:45.619; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:58:45.619; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:58:45.619; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 13:58:45.619; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:58:45 GMT
+DEBUG - 2014-12-08 13:58:45.620; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:45.620; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeY[0xe]"
+DEBUG - 2014-12-08 13:58:45.621; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:45.621; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 13:58:45.621; com.hcm.solr.test.MyTest; ########## Query Time :3
+INFO  - 2014-12-08 13:58:45.621; com.hcm.solr.test.MyTest; ########## Elapsed Time :192
+INFO  - 2014-12-08 13:58:45.622; com.hcm.solr.test.MyTest; ########## Status :0
+DEBUG - 2014-12-08 13:58:53.615; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:58:53.893; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:58:53.906; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:58:53.908; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:58:53.933; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:58:53.945; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:58:53.945; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:53.946; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:58:53.946; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:58:53.946; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:58:53.947; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.948; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.948; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.949; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.949; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.949; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=*%3A*&rows=5&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:58:53.950; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:58:53.951; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:58:53.951; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:58:53.955; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.957; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.957; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.957; org.apache.http.impl.conn.Wire;  << "Content-Length: 267[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.957; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:58:53 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.958; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:58:53.959; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:53.959; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:58:53.960; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:58:53.960; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:58:53.960; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 267
+DEBUG - 2014-12-08 13:58:53.960; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:58:53 GMT
+DEBUG - 2014-12-08 13:58:53.963; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:53.986; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeA[0xe0]&params[0xa4][0xe0]!q#*:*[0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]i`[0x0][0x85][0xb][0xa3][0xe0]"id)change.me[0xe0]%title[0x81])change.me[0xe0])_version_[0x7][0x14][0xa2]Q[0x8a]_`[0x0][0x0][0xb][0xa3][0xea]%hello[0xeb][0x81]%world[0xec][0x7][0x14][0xa2]Q[0xa6][0x98][0xc0][0x0][0x0][0xb][0xa3][0xea]&[0xe4][0xbd][0xa0][0xe5][0xa5][0xbd][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xab]s[0xb0][0x0][0x0][0xb][0xa3][0xea]&[0xe5][0x91][0xb5][0xe5][0x91][0xb5][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xae][0xb5][0xb0][0x0][0x0][0xb][0xa3][0xea]!1[0xeb][0x81]'bbbbbbb[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]P[0x0][0x0]"
+DEBUG - 2014-12-08 13:58:53.989; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:58:53.989; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 13:58:53.990; com.hcm.solr.test.MyTest; ########### 总共 ： 9条记录
+INFO  - 2014-12-08 13:58:53.990; com.hcm.solr.test.MyTest; ######### id : change.me  title : [change.me]
+INFO  - 2014-12-08 13:58:53.990; com.hcm.solr.test.MyTest; ######### id : hello  title : [world]
+INFO  - 2014-12-08 13:58:53.990; com.hcm.solr.test.MyTest; ######### id : 你好  title : [世界]
+INFO  - 2014-12-08 13:58:53.990; com.hcm.solr.test.MyTest; ######### id : 呵呵  title : [世界]
+INFO  - 2014-12-08 13:58:53.991; com.hcm.solr.test.MyTest; ######### id : 1  title : [bbbbbbb]
+DEBUG - 2014-12-08 13:59:15.658; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 13:59:15.934; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 13:59:15.946; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 13:59:15.949; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 13:59:15.974; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 13:59:15.986; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 13:59:15.987; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:59:15.988; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 13:59:15.988; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 13:59:15.988; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=*%3A*&rows=10&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:59:15.989; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=*%3A*&rows=10&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.990; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.991; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.991; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.991; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.992; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=*%3A*&rows=10&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 13:59:15.993; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 13:59:15.993; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 13:59:15.993; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 13:59:15.997; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.999; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.999; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 13:59:15.999; org.apache.http.impl.conn.Wire;  << "Content-Length: 382[\r][\n]"
+DEBUG - 2014-12-08 13:59:16.000; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 05:59:15 GMT[\r][\n]"
+DEBUG - 2014-12-08 13:59:16.000; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 13:59:16.001; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:59:16.001; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 13:59:16.001; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 13:59:16.002; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 13:59:16.002; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 382
+DEBUG - 2014-12-08 13:59:16.002; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 05:59:15 GMT
+DEBUG - 2014-12-08 13:59:16.004; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 13:59:16.026; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeA[0xe0]&params[0xa4][0xe0]!q#*:*[0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows"10[0xe0](response[0xc][0x83]i`[0x0][0x89][0xb][0xa3][0xe0]"id)change.me[0xe0]%title[0x81])change.me[0xe0])_version_[0x7][0x14][0xa2]Q[0x8a]_`[0x0][0x0][0xb][0xa3][0xea]%hello[0xeb][0x81]%world[0xec][0x7][0x14][0xa2]Q[0xa6][0x98][0xc0][0x0][0x0][0xb][0xa3][0xea]&[0xe4][0xbd][0xa0][0xe5][0xa5][0xbd][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xab]s[0xb0][0x0][0x0][0xb][0xa3][0xea]&[0xe5][0x91][0xb5][0xe5][0x91][0xb5][0xeb][0x81]&[0xe4][0xb8][0x96][0xe7][0x95][0x8c][0xec][0x7][0x14][0xa2]Q[0xae][0xb5][0xb0][0x0][0x0][0xb][0xa3][0xea]!1[0xeb][0x81]'bbbbbbb[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]P[0x0][0x0][0xb][0xa3][0xea]!2[0xeb][0x81]'ccccccc[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]`[0x0][0x0][0xb][0xa3][0xea]!3[0xeb][0x81]&dddddd[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]`[0x0][0x1][0xb][0xa3][0xea]!4[0xeb][0x81]&eeeeee[0xec][0x7][0x14][0xa2][0x82][0xb6][0xaf]p[0x0][0x0][0xb][0xa3][0xea]"11[0xeb][0x81]6this is my document !![0xec][0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0]"
+DEBUG - 2014-12-08 13:59:16.030; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 13:59:16.030; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 13:59:16.030; com.hcm.solr.test.MyTest; ########### 总共 ： 9条记录
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : change.me  title : [change.me]
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : hello  title : [world]
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : 你好  title : [世界]
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : 呵呵  title : [世界]
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : 1  title : [bbbbbbb]
+INFO  - 2014-12-08 13:59:16.031; com.hcm.solr.test.MyTest; ######### id : 2  title : [ccccccc]
+INFO  - 2014-12-08 13:59:16.032; com.hcm.solr.test.MyTest; ######### id : 3  title : [dddddd]
+INFO  - 2014-12-08 13:59:16.032; com.hcm.solr.test.MyTest; ######### id : 4  title : [eeeeee]
+INFO  - 2014-12-08 13:59:16.032; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+DEBUG - 2014-12-08 14:01:16.812; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:01:17.130; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:01:17.143; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:01:17.146; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:01:17.170; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:01:17.184; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:01:17.184; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:01:17.185; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:01:17.185; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:01:17.186; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=this+my&q.op=and&start=0&rows=5&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:01:17.187; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=this+my&q.op=and&start=0&rows=5&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.188; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.188; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.188; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.189; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.189; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=this+my&q.op=and&start=0&rows=5&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:01:17.190; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:01:17.190; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:01:17.190; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:01:17.242; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.244; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.245; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.245; org.apache.http.impl.conn.Wire;  << "Content-Length: 215[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.245; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:01:17 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.246; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:01:17.246; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:01:17.247; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:01:17.247; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:01:17.247; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:01:17.247; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 215
+DEBUG - 2014-12-08 14:01:17.248; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:01:17 GMT
+DEBUG - 2014-12-08 14:01:17.250; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:01:17.271; org.apache.http.impl.conn.Wire;  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeR[0x3][0xe0]&params[0xa7][0xe0]"fl'*,score[0xe0]%start!0[0xe0]!q'this my[0xe0]$q.op#and[0xe0]"wt'javabin[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x8]?[0xec]-[0xec][0x81][0xb][0xa4][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0]%score[0x8]?[0xec]-[0xec]"
+DEBUG - 2014-12-08 14:01:17.274; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:01:17.274; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:01:17.275; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:01:17.275; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+DEBUG - 2014-12-08 14:49:56.664; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:49:56.981; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:49:56.994; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:49:56.997; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:49:57.023; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:49:57.035; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:49:57.035; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:49:57.036; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:49:57.036; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:49:57.037; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:49:57.037; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.039; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.039; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.039; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.040; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.040; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:49:57.041; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:49:57.041; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:49:57.041; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:49:57.237; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.239; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.240; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.240; org.apache.http.impl.conn.Wire;  << "Content-Length: 274[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.240; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:49:57 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.240; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:49:57.241; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:49:57.241; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:49:57.242; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:49:57.242; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:49:57.242; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 274
+DEBUG - 2014-12-08 14:49:57.242; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:49:57 GMT
+DEBUG - 2014-12-08 14:49:57.245; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:49:57.267; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeQ[0xc][0xe0]&params[0xa8][0xe0]+hl.fragsize#200[0xe0]%start!0[0xe0]!q*title:this[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xef][0x81]?[0x0]<em>this</em> is my document !!"
+DEBUG - 2014-12-08 14:49:57.270; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:49:57.270; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:49:57.271; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:49:57.272; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:49:57.272; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:49:57.272; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:49:57.272; com.hcm.solr.test.MyTest; ############ subValues : <em>this</em> is my document !!
+DEBUG - 2014-12-08 14:51:05.528; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:51:05.852; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:51:05.864; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:51:05.867; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:51:05.891; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:51:05.903; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:51:05.904; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:51:05.904; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:51:05.905; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:51:05.905; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:51:05.906; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.907; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.908; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.908; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.908; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.908; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:51:05.909; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:51:05.910; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:51:05.910; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:51:05.913; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.915; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.916; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.916; org.apache.http.impl.conn.Wire;  << "Content-Length: 273[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.916; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:51:05 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.917; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:51:05.918; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:51:05.919; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:51:05.919; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:51:05.919; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:51:05.919; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 273
+DEBUG - 2014-12-08 14:51:05.919; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:51:05 GMT
+DEBUG - 2014-12-08 14:51:05.922; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:51:05.945; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeA[0xe0]&params[0xa8][0xe0]+hl.fragsize#200[0xe0]%start!0[0xe0]!q*title:this[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xef][0x81]?[0x0]<em>this</em> is my document !!"
+DEBUG - 2014-12-08 14:51:05.948; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:51:05.948; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:51:05.949; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:51:05.949; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:51:05.950; com.hcm.solr.test.MyTest; ############ 高亮
+INFO  - 2014-12-08 14:51:05.950; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:51:05.950; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:51:05.951; com.hcm.solr.test.MyTest; ############ subValues : <em>this</em> is my document !!
+DEBUG - 2014-12-08 14:52:41.521; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:52:41.821; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:52:41.834; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:52:41.836; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:52:41.861; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:52:41.873; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:52:41.873; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:52:41.874; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:52:41.874; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:52:41.874; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3CSPAN+class%3D%22red%22%3E&hl.simple.post=%3C%2FSPAN%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:52:41.875; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3CSPAN+class%3D%22red%22%3E&hl.simple.post=%3C%2FSPAN%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.876; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.877; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.877; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.877; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.877; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3CSPAN+class%3D%22red%22%3E&hl.simple.post=%3C%2FSPAN%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:52:41.879; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:52:41.879; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:52:41.879; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:52:41.883; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.885; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.885; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.886; org.apache.http.impl.conn.Wire;  << "Content-Length: 347[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.886; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:52:41 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.887; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:52:41.888; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:52:41.888; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:52:41.889; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:52:41.890; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:52:41.890; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 347
+DEBUG - 2014-12-08 14:52:41.890; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:52:41 GMT
+DEBUG - 2014-12-08 14:52:41.894; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:52:41.916; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeA[0xe0]&params[0xaa][0xe0]+hl.fragsize#200[0xe0]%start!0[0xe0]!q*title:this[0xe0]-hl.simple.pre2<SPAN class="red">[0xe0].hl.simple.post'</SPAN>[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xf1][0x81]?[0x10]<SPAN class="red">this</SPAN> is my document !!"
+DEBUG - 2014-12-08 14:52:41.919; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:52:41.919; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:52:41.920; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:52:41.921; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:52:41.921; com.hcm.solr.test.MyTest; ############ 高亮
+INFO  - 2014-12-08 14:52:41.921; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:52:41.921; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:52:41.921; com.hcm.solr.test.MyTest; ############ subValues : <SPAN class="red">this</SPAN> is my document !!
+DEBUG - 2014-12-08 14:53:02.260; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:53:02.537; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:53:02.549; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:53:02.552; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:53:02.577; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:53:02.589; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:53:02.589; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:53:02.590; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:53:02.590; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:53:02.590; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:53:02.591; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.592; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.593; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.593; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.593; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.594; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:53:02.595; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:53:02.595; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:53:02.595; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:53:02.598; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.601; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.601; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.602; org.apache.http.impl.conn.Wire;  << "Content-Length: 347[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.602; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:53:02 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.602; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:53:02.603; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:53:02.604; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:53:02.604; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:53:02.604; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:53:02.604; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 347
+DEBUG - 2014-12-08 14:53:02.605; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:53:02 GMT
+DEBUG - 2014-12-08 14:53:02.608; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:53:02.630; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeA[0xe0]&params[0xaa][0xe0]+hl.fragsize#200[0xe0]%start!0[0xe0]!q*title:this[0xe0]-hl.simple.pre2<span class="red">[0xe0].hl.simple.post'</span>[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xf1][0x81]?[0x10]<span class="red">this</span> is my document !!"
+DEBUG - 2014-12-08 14:53:02.633; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:53:02.634; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:53:02.635; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:53:02.635; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:53:02.635; com.hcm.solr.test.MyTest; ############ 高亮
+INFO  - 2014-12-08 14:53:02.635; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:53:02.635; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:53:02.636; com.hcm.solr.test.MyTest; ############ subValues : <span class="red">this</span> is my document !!
+DEBUG - 2014-12-08 14:58:10.976; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:58:11.282; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:58:11.294; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:58:11.297; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:58:11.323; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:58:11.334; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:58:11.335; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:58:11.336; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:58:11.336; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:58:11.336; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:58:11.338; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.339; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.339; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.340; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.340; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.340; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:58:11.342; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:58:11.342; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:58:11.342; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:58:11.346; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.348; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.349; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.349; org.apache.http.impl.conn.Wire;  << "Content-Length: 381[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.349; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:58:11 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.350; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:58:11.350; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:58:11.351; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:58:11.351; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:58:11.351; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:58:11.352; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 381
+DEBUG - 2014-12-08 14:58:11.352; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:58:11 GMT
+DEBUG - 2014-12-08 14:58:11.355; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:58:11.378; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB[0xe0]&params[0xab][0xe0]+hl.fragsize#200[0xe0];hl.useFastVectorHighlighter$true[0xe0]%start!0[0xe0]!q*title:this[0xe0]-hl.simple.pre2<span class="red">[0xe0].hl.simple.post'</span>[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xf2][0x81]?[0x10]<span class="red">this</span> is my document !!"
+DEBUG - 2014-12-08 14:58:11.381; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:58:11.381; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:58:11.383; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:58:11.383; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:58:11.383; com.hcm.solr.test.MyTest; ############ 高亮
+INFO  - 2014-12-08 14:58:11.383; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:58:11.384; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:58:11.384; com.hcm.solr.test.MyTest; ############ subValues : <span class="red">this</span> is my document !!
+DEBUG - 2014-12-08 14:58:41.861; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 14:58:42.165; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 14:58:42.180; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 14:58:42.183; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 14:58:42.212; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 14:58:42.228; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 14:58:42.228; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:58:42.229; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 14:58:42.229; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 14:58:42.230; org.apache.http.impl.conn.DefaultClientConnection; Sending request: GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&hl.snippets=2&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:58:42.231; org.apache.http.impl.conn.Wire;  >> "GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&hl.snippets=2&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.233; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.234; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.234; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.234; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.235; org.apache.http.impl.conn.DefaultClientConnection; >> GET /solr/select?q=title%3Athis&start=0&rows=5&hl=true&hl.fl=title&hl.useFastVectorHighlighter=true&hl.fragsize=200&hl.simple.pre=%3Cspan+class%3D%22red%22%3E&hl.simple.post=%3C%2Fspan%3E&hl.snippets=2&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 14:58:42.236; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 14:58:42.236; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 14:58:42.237; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 14:58:42.241; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.243; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.244; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.244; org.apache.http.impl.conn.Wire;  << "Content-Length: 396[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.244; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 06:58:42 GMT[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.245; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 14:58:42.246; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:58:42.246; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 14:58:42.247; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 14:58:42.247; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 14:58:42.247; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 396
+DEBUG - 2014-12-08 14:58:42.248; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 06:58:42 GMT
+DEBUG - 2014-12-08 14:58:42.251; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 14:58:42.273; org.apache.http.impl.conn.Wire;  << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB[0xe0]&params[0xac][0xe0]+hl.fragsize#200[0xe0]+hl.snippets!2[0xe0];hl.useFastVectorHighlighter$true[0xe0]%start!0[0xe0]!q*title:this[0xe0]-hl.simple.pre2<span class="red">[0xe0].hl.simple.post'</span>[0xe0]%hl.fl%title[0xe0]"wt'javabin[0xe0]"hl$true[0xe0]'version!2[0xe0]$rows!5[0xe0](response[0xc][0x83]a`[0x0][0x81][0xb][0xa3][0xe0]"id"11[0xe0]%title[0x81]6this is my document !![0xe0])_version_[0x7][0x14][0xa2][0x87][0xa8]5[0x0][0x0][0x0][0xe0],highlighting[0xa1][0xe0]"11[0xa1][0xf3][0x81]?[0x10]<span class="red">this</span> is my document !!"
+DEBUG - 2014-12-08 14:58:42.276; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 14:58:42.276; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 14:58:42.277; com.hcm.solr.test.MyTest; ########### 总共 ： 1条记录
+INFO  - 2014-12-08 14:58:42.277; com.hcm.solr.test.MyTest; ######### id : 11  title : [this is my document !!]
+INFO  - 2014-12-08 14:58:42.278; com.hcm.solr.test.MyTest; ############ 高亮
+INFO  - 2014-12-08 14:58:42.278; com.hcm.solr.test.MyTest; ############ id : 11
+INFO  - 2014-12-08 14:58:42.278; com.hcm.solr.test.MyTest; ############ subKey : title
+INFO  - 2014-12-08 14:58:42.278; com.hcm.solr.test.MyTest; ############ subValues : <span class="red">this</span> is my document !!
+DEBUG - 2014-12-08 15:31:16.540; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 15:31:17.001; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 15:31:17.014; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:17.017; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:17.046; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 15:31:17.067; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 15:31:17.068; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:17.069; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:17.069; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 15:31:17.070; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 15:31:17.071; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.072; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.073; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.073; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.073; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.073; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.075; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.075; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 15:31:17.076; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 15:31:17.076; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 15:31:17.076; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 15:31:17.076; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:17.077; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 15:31:17.077; org.apache.http.impl.conn.Wire;  >> "2cb[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.078; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="title">What is Fluentd?</field><field name="content">Fluentd is an open source data collector for unified logging layer</field><field name="content">Fluentd allows you to unify data collection and consumption for a better use and understanding of data.</field><field name="content">Fluentd decouples data sources from backend systems by providing a unified logging layer in between.</field><field name="content">Fluentd proves you can achieve programmer happiness and performance at the same time. A great example of Ruby beyond the Web.</field><field name="content">Fluentd to differentiate their products with better use of data.</field><field name="id">1001</field></doc></add>"
+DEBUG - 2014-12-08 15:31:17.078; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.078; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.078; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.159; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.162; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.163; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.163; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.163; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 07:31:17 GMT[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.163; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.164; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:17.165; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:17.165; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 15:31:17.165; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 15:31:17.166; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 15:31:17.166; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 07:31:17 GMT
+DEBUG - 2014-12-08 15:31:17.169; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:17.187; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeP[0x5]"
+DEBUG - 2014-12-08 15:31:17.189; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:17.189; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:17.192; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:17.193; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:17.193; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 15:31:17.194; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 15:31:17.194; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 15:31:17.194; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:17.195; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:17.195; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 15:31:17.195; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 15:31:17.195; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.196; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.196; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.196; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.196; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.197; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.197; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.197; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 15:31:17.197; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 15:31:17.198; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 15:31:17.198; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 15:31:17.198; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:17.198; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 15:31:17.199; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 15:31:17.434; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.434; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.435; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.435; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.435; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 07:31:17 GMT[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.436; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 15:31:17.436; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:17.437; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:17.437; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 15:31:17.438; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 15:31:17.438; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 15:31:17.438; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 07:31:17 GMT
+DEBUG - 2014-12-08 15:31:17.439; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:17.439; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeY[0xe]"
+DEBUG - 2014-12-08 15:31:17.440; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:17.440; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 15:31:17.440; com.hcm.solr.test.SolrEntityTest; ########## Query Time :80
+INFO  - 2014-12-08 15:31:17.440; com.hcm.solr.test.SolrEntityTest; ########## Elapsed Time :261
+INFO  - 2014-12-08 15:31:17.440; com.hcm.solr.test.SolrEntityTest; ########## Status :0
+DEBUG - 2014-12-08 15:31:26.828; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 15:31:27.114; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 15:31:27.126; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:27.128; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:27.153; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 15:31:27.164; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 15:31:27.164; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:27.165; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:27.165; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 15:31:27.166; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 15:31:27.167; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.168; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.168; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.168; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.169; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.169; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.170; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.170; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 15:31:27.171; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 15:31:27.171; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 15:31:27.171; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 15:31:27.171; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:27.171; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 15:31:27.179; org.apache.http.impl.conn.Wire;  >> "2cb[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.180; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="content">Fluentd is an open source data collector for unified logging layer</field><field name="content">Fluentd allows you to unify data collection and consumption for a better use and understanding of data.</field><field name="content">Fluentd decouples data sources from backend systems by providing a unified logging layer in between.</field><field name="content">Fluentd proves you can achieve programmer happiness and performance at the same time. A great example of Ruby beyond the Web.</field><field name="content">Fluentd to differentiate their products with better use of data.</field><field name="id">1001</field><field name="title">What is Fluentd?</field></doc></add>"
+DEBUG - 2014-12-08 15:31:27.180; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.180; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.181; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.185; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.187; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.188; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.188; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.189; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 07:31:27 GMT[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.189; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.190; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:27.195; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:27.195; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 15:31:27.195; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 15:31:27.195; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 15:31:27.196; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 07:31:27 GMT
+DEBUG - 2014-12-08 15:31:27.198; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:27.212; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeD"
+DEBUG - 2014-12-08 15:31:27.261; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:27.262; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:27.270; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:27.271; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 15:31:27.271; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 15:31:27.273; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 15:31:27.274; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 15:31:27.275; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:27.275; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 15:31:27.276; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 15:31:27.276; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 15:31:27.280; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.280; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.281; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.281; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.281; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.282; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.282; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.282; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 15:31:27.283; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 15:31:27.283; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 15:31:27.283; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 15:31:27.283; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 15:31:27.284; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 15:31:27.284; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 15:31:27.581; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.581; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.582; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.582; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.583; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 07:31:27 GMT[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.583; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 15:31:27.583; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:27.584; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 15:31:27.584; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 15:31:27.584; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 15:31:27.584; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 15:31:27.585; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 07:31:27 GMT
+DEBUG - 2014-12-08 15:31:27.585; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:27.586; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeV[0x12]"
+DEBUG - 2014-12-08 15:31:27.586; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 15:31:27.586; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 15:31:27.587; com.hcm.solr.test.SolrEntityTest; ########## Query Time :4
+INFO  - 2014-12-08 15:31:27.587; com.hcm.solr.test.SolrEntityTest; ########## Elapsed Time :207
+INFO  - 2014-12-08 15:31:27.587; com.hcm.solr.test.SolrEntityTest; ########## Status :0
+DEBUG - 2014-12-08 16:09:37.713; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+DEBUG - 2014-12-08 16:09:38.107; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+DEBUG - 2014-12-08 16:09:38.120; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 16:09:38.122; org.apache.http.impl.conn.DefaultClientConnectionOperator; Connecting to 127.0.0.1:8086
+DEBUG - 2014-12-08 16:09:38.147; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 16:09:38.158; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 16:09:38.158; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 16:09:38.159; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 16:09:38.159; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 16:09:38.159; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 16:09:38.160; org.apache.http.impl.conn.Wire;  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.162; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.162; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.162; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.162; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.163; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.164; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.164; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-12-08 16:09:38.164; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 16:09:38.165; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-12-08 16:09:38.165; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/xml; charset=UTF-8
+DEBUG - 2014-12-08 16:09:38.165; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 16:09:38.171; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 16:09:38.172; org.apache.http.impl.conn.Wire;  >> "58b[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.173; org.apache.http.impl.conn.Wire;  >> "<add><doc boost="1.0"><field name="content">Fluentd is an open source data collector for unified logging layer</field><field name="content">Fluentd allows you to unify data collection and consumption for a better use and understanding of data.</field><field name="content">Fluentd decouples data sources from backend systems by providing a unified logging layer in between.</field><field name="content">Fluentd proves you can achieve programmer happiness and performance at the same time. A great example of Ruby beyond the Web.</field><field name="content">Fluentd to differentiate their products with better use of data.</field><field name="id">1001</field><field name="title">What is Fluentd?</field></doc><doc boost="1.0"><field name="content">Fluentd is an open source data collector for unified logging layer</field><field name="content">Fluentd allows you to unify data collection and consumption for a better use and understanding of data.</field><field name="content">Fluentd decouples data sources from backend systems by providing a unified logging layer in between.</field><field name="content">Fluentd proves you can achieve programmer happiness and performance at the same time. A great example of Ruby beyond the Web.</field><field name="content">Fluentd to differentiate their products with better use of data.</field><field name="id">1002</field><field name="title">What is Fluentd?</field></doc></add>"
+DEBUG - 2014-12-08 16:09:38.173; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.173; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.174; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.181; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.184; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.184; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.184; org.apache.http.impl.conn.Wire;  << "Content-Length: 40[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.184; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 08:09:38 GMT[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.185; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.186; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 16:09:38.186; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 16:09:38.187; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 16:09:38.187; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 16:09:38.187; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 40
+DEBUG - 2014-12-08 16:09:38.187; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 08:09:38 GMT
+DEBUG - 2014-12-08 16:09:38.191; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 16:09:38.207; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeF"
+DEBUG - 2014-12-08 16:09:38.208; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 16:09:38.208; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 16:09:38.210; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 16:09:38.211; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+DEBUG - 2014-12-08 16:09:38.211; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-12-08 16:09:38.212; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-12-08 16:09:38.212; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-12-08 16:09:38.212; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-12-08 16:09:38.212; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-12-08 16:09:38.213; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-12-08 16:09:38.213; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 16:09:38.213; org.apache.http.impl.conn.Wire;  >> "POST /solr/update HTTP/1.1[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.213; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.214; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.214; org.apache.http.impl.conn.Wire;  >> "Content-Length: 67[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.214; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.0.1:8086[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.214; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.214; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.215; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/update HTTP/1.1
+DEBUG - 2014-12-08 16:09:38.215; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+DEBUG - 2014-12-08 16:09:38.215; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-12-08 16:09:38.215; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Length: 67
+DEBUG - 2014-12-08 16:09:38.215; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.0.1:8086
+DEBUG - 2014-12-08 16:09:38.216; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-12-08 16:09:38.216; org.apache.http.impl.conn.Wire;  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+DEBUG - 2014-12-08 16:09:38.480; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.481; org.apache.http.impl.conn.Wire;  << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.481; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.481; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.481; org.apache.http.impl.conn.Wire;  << "Date: Mon, 08 Dec 2014 08:09:38 GMT[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.482; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-12-08 16:09:38.482; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-12-08 16:09:38.483; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-12-08 16:09:38.483; org.apache.http.impl.conn.DefaultClientConnection; << Server: Apache-Coyote/1.1
+DEBUG - 2014-12-08 16:09:38.483; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-12-08 16:09:38.483; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-12-08 16:09:38.483; org.apache.http.impl.conn.DefaultClientConnection; << Date: Mon, 08 Dec 2014 08:09:38 GMT
+DEBUG - 2014-12-08 16:09:38.484; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-12-08 16:09:38.484; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeV[0x10]"
+DEBUG - 2014-12-08 16:09:38.484; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 0][route: {}->http://127.0.0.1:8086] can be kept alive indefinitely
+DEBUG - 2014-12-08 16:09:38.485; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 0][route: {}->http://127.0.0.1:8086][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+INFO  - 2014-12-08 16:09:38.485; com.hcm.solr.test.SolrEntityTest; ########## Query Time :6
+INFO  - 2014-12-08 16:09:38.485; com.hcm.solr.test.SolrEntityTest; ########## Elapsed Time :262
+INFO  - 2014-12-08 16:09:38.485; com.hcm.solr.test.SolrEntityTest; ########## Status :0
